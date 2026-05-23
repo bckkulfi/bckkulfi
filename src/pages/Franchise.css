@@ -1,0 +1,430 @@
+.franchise-hero {
+  padding: calc(var(--navbar-h) + 64px) 0 80px;
+  background: linear-gradient(160deg, var(--cream) 0%, var(--cream-dark) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.franchise-hero-title {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  color: var(--maroon-dark);
+  margin-bottom: 20px;
+  margin-top: 8px;
+}
+
+.franchise-hero-sub {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  color: var(--text-light);
+  margin-top: 16px;
+  max-width: 540px;
+}
+
+.franchise-hero-deco {
+  position: absolute;
+  right: -60px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--font-display);
+  font-size: clamp(120px, 22vw, 240px);
+  font-weight: 700;
+  color: rgba(123, 28, 28, 0.04);
+  line-height: 1;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* Investment */
+.investment-section {
+  padding: 100px 0;
+  background: var(--white);
+}
+
+.investment-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.investment-header .gold-divider {
+  margin: 20px auto;
+}
+
+.investment-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.inv-card {
+  background: var(--cream);
+  border-radius: 4px;
+  padding: 40px 28px;
+  text-align: center;
+  transition: var(--transition);
+  border: 1.5px solid transparent;
+}
+
+.inv-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--cream-deeper);
+}
+
+.inv-card.primary {
+  background: var(--maroon);
+  color: var(--cream);
+}
+
+.inv-card.primary .inv-amount {
+  color: var(--gold);
+}
+
+.inv-card.primary .inv-label {
+  color: rgba(245, 232, 208, 0.8);
+}
+
+.inv-card.primary .inv-note {
+  color: rgba(245, 232, 208, 0.5);
+}
+
+.inv-card.accent {
+  background: var(--gold-pale);
+  border-color: rgba(201, 151, 43, 0.3);
+}
+
+.inv-icon {
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.inv-amount {
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--maroon);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.inv-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-mid);
+  margin-bottom: 10px;
+}
+
+.inv-note {
+  font-family: var(--font-serif);
+  font-size: 0.88rem;
+  color: var(--text-light);
+  line-height: 1.5;
+}
+
+/* Benefits */
+.benefits-section {
+  padding: 100px 0;
+  background: var(--cream-dark);
+}
+
+.benefits-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.benefits-header .gold-divider {
+  margin: 20px auto;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.benefit-card {
+  background: var(--cream);
+  border-radius: 4px;
+  padding: 32px 28px;
+  transition: var(--transition);
+}
+
+.benefit-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.benefit-icon {
+  font-size: 1.4rem;
+  color: var(--gold);
+  margin-bottom: 16px;
+}
+
+.benefit-card h3 {
+  font-size: 1.05rem;
+  color: var(--maroon);
+  margin-bottom: 10px;
+}
+
+.benefit-card p {
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  color: var(--text-light);
+  line-height: 1.7;
+}
+
+/* Steps */
+.steps-section {
+  padding: 100px 0;
+  background: var(--maroon);
+  position: relative;
+  overflow: hidden;
+}
+
+.steps-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(201, 151, 43, 0.08) 0%, transparent 60%);
+}
+
+.steps-header {
+  text-align: center;
+  margin-bottom: 64px;
+  position: relative;
+  z-index: 1;
+}
+
+.steps-header .section-label {
+  color: rgba(201, 151, 43, 0.7);
+}
+
+.steps-header .gold-divider {
+  margin: 20px auto;
+}
+
+.steps-list {
+  display: flex;
+  gap: 0;
+  position: relative;
+  z-index: 1;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+
+.step-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 16px;
+  min-width: 160px;
+  position: relative;
+}
+
+.step-num {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgba(201, 151, 43, 0.25);
+  line-height: 1;
+  margin-bottom: 16px;
+}
+
+.step-content h3 {
+  font-size: 1rem;
+  color: var(--cream);
+  margin-bottom: 8px;
+}
+
+.step-content p {
+  font-family: var(--font-serif);
+  font-size: 0.88rem;
+  color: rgba(245, 232, 208, 0.6);
+  line-height: 1.6;
+}
+
+.step-connector {
+  position: absolute;
+  top: 20px;
+  right: -16px;
+  width: 32px;
+  height: 1px;
+  background: rgba(201, 151, 43, 0.3);
+}
+
+/* Inquiry */
+.inquiry-section {
+  padding: 100px 0;
+  background: var(--cream);
+}
+
+.inquiry-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.inquiry-info h2 {
+  font-size: 2rem;
+  color: var(--maroon);
+  margin: 8px 0 16px;
+}
+
+.inquiry-info p {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  color: var(--text-light);
+  line-height: 1.7;
+  margin-bottom: 32px;
+}
+
+.inquiry-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.inq-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.inq-icon {
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.inq-item strong {
+  display: block;
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 2px;
+}
+
+.inq-item a {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  color: var(--text-light);
+  transition: color var(--transition-fast);
+}
+
+.inq-item a:hover {
+  color: var(--maroon);
+}
+
+.inquiry-form-box {
+  background: var(--white);
+  border-radius: 4px;
+  padding: 48px;
+  box-shadow: var(--shadow-md);
+}
+
+.form-fields h3 {
+  font-size: 1.3rem;
+  color: var(--maroon);
+  margin-bottom: 28px;
+}
+
+.field-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.field-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field-group label {
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-mid);
+}
+
+.field-group input,
+.field-group textarea {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  color: var(--text-dark);
+  background: var(--cream);
+  border: 1.5px solid var(--cream-deeper);
+  border-radius: 2px;
+  padding: 12px 16px;
+  transition: border-color var(--transition-fast);
+  resize: vertical;
+}
+
+.field-group input::placeholder,
+.field-group textarea::placeholder {
+  color: var(--text-light);
+  opacity: 0.6;
+}
+
+.field-group input:focus,
+.field-group textarea:focus {
+  outline: none;
+  border-color: var(--maroon);
+}
+
+.form-submit {
+  width: 100%;
+  justify-content: center;
+  padding: 16px;
+  font-size: 0.88rem;
+  margin-top: 8px;
+}
+
+.form-success {
+  text-align: center;
+  padding: 48px 24px;
+}
+
+.success-icon {
+  font-size: 2.5rem;
+  color: var(--gold);
+  margin-bottom: 20px;
+}
+
+.form-success h3 {
+  font-size: 1.8rem;
+  color: var(--maroon);
+  margin-bottom: 12px;
+}
+
+.form-success p {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  color: var(--text-light);
+  line-height: 1.7;
+}
+
+@media (max-width: 1024px) {
+  .investment-cards { grid-template-columns: repeat(2, 1fr); }
+  .benefits-grid { grid-template-columns: repeat(2, 1fr); }
+  .inquiry-wrapper { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+  .investment-section, .benefits-section, .steps-section, .inquiry-section { padding: 64px 0; }
+  .inquiry-form-box { padding: 32px 20px; }
+  .field-row { grid-template-columns: 1fr; }
+  .benefits-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 600px) {
+  .investment-cards { grid-template-columns: 1fr; }
+}
