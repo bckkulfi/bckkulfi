@@ -19,7 +19,7 @@ const regularFlavors = [
 ]
 
 const seasonalFlavors = [
-  { name: 'Mango', desc: 'The king of fruits meets the king of kulfis. Summer's finest.' },
+  { name: 'Mango', desc: 'The king of fruits meets the king of kulfis. Summer\'s finest.' },
   { name: 'Strawberry', desc: 'Fresh strawberry kulfi — bright, fruity, and irresistible.' },
   { name: 'Custard Apple', desc: 'Creamy sitaphal kulfi — a winter treasure from nature.' },
   { name: 'Chickoo', desc: 'Sapodilla kulfi with its unique caramel-like sweetness.' },
