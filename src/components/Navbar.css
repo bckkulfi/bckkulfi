@@ -32,8 +32,8 @@
 }
 
 .brand-logo {
-  width: 68px;
-  height: 68px;
+  width: 150px;
+  height: 150px;
   object-fit: contain;
   flex-shrink: 0;
 }
