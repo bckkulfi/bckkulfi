@@ -2,9 +2,9 @@
   --cream: #fdf6ec;
   --cream-dark: #f5e8d0;
   --cream-deeper: #ede0c4;
-  --maroon: #eb2741;
-  --maroon-dark: #b71930;
-  --maroon-light: #f25a6d;
+  --maroon: #7b1c1c;
+  --maroon-dark: #5a1212;
+  --maroon-light: #a02828;
   --gold: #c9972b;
   --gold-light: #e8b84b;
   --gold-pale: #f5e4b0;
@@ -17,9 +17,9 @@
   --font-serif: 'Cormorant Garamond', serif;
   --font-sans: 'DM Sans', sans-serif;
 
-  --shadow-sm: 0 2px 8px rgba(235, 39, 65, 0.08);
-  --shadow-md: 0 6px 24px rgba(235, 39, 65, 0.14);
-  --shadow-lg: 0 16px 48px rgba(235, 39, 65, 0.18);
+  --shadow-sm: 0 2px 8px rgba(90, 18, 18, 0.08);
+  --shadow-md: 0 6px 24px rgba(90, 18, 18, 0.14);
+  --shadow-lg: 0 16px 48px rgba(90, 18, 18, 0.18);
   --shadow-gold: 0 4px 20px rgba(201, 151, 43, 0.25);
 
   --transition: 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
