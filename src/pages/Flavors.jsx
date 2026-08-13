@@ -28,6 +28,16 @@ const seasonalFlavors = [
   { name: 'Watermelon', desc: 'Light and refreshing watermelon kulfi for hot days.' },
 ]
 
+const flavorImages = {
+  'Malai': 'Malai_IMG_6585.jpg', 'Pista': 'Pista_IMG_6603.jpg', 'Kesar Pista': 'KPPPPIMG_6611.jpg',
+  'Chocolate': 'Chocolate_IMG_6657.jpg', 'Coffee': 'IMG_6655.jpg', 'Elaichi Kaju': 'IMG_6605.jpg',
+  'Walnut': 'IMG_6608.jpg', 'Mixed Dry Fruit': 'IMG_6618.jpg', 'Anjeer': 'IMG_6619.jpg',
+  'Badam': 'IMG_6632.jpg', 'Gulab': 'Gulab_IMG_6663.jpg', 'Banana': 'IMG_6638.jpg',
+  'Black Currant': 'BC_IMG_6680.jpg', 'Dates': 'Dates__IMG_6622.jpg', 'Mango': 'Mango_IMG_6646.jpg',
+  'Strawberry': 'IMG_6648.jpg', 'Custard Apple': 'IMG_6661.jpg', 'Chickoo': 'IMG_6669.jpg',
+  'Muskmelon': 'IMG_6672.jpg', 'Guava': 'IMG_6674.jpg', 'Watermelon': 'IMG_6677.jpg',
+}
+
 export default function Flavors() {
   const [tab, setTab] = useState('regular')
 
@@ -123,6 +133,13 @@ function FlavorItem({ flavor, index, seasonal }) {
       className={`flavor-item ${seasonal ? 'seasonal' : ''}`}
       style={{ animationDelay: `${index * 0.04}s` }}
     >
+      <img
+        className="flavor-item-image"
+        src={`/flavors/${encodeURIComponent(flavorImages[flavor.name])}`}
+        alt={`${flavor.name} kulfi`}
+        loading="lazy"
+        decoding="async"
+      />
       <div className="flavor-item-num">{String(index + 1).padStart(2, '0')}</div>
       <div className="flavor-item-content">
         <h3>{flavor.name}</h3>

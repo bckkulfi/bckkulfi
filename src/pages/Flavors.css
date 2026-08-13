@@ -154,6 +154,15 @@
   transform: translateX(4px);
 }
 
+.flavor-item-image {
+  width: 76px;
+  height: 76px;
+  object-fit: cover;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: var(--cream-dark);
+}
+
 .flavor-item.seasonal:hover {
   border-left-color: var(--gold);
 }
@@ -237,4 +246,10 @@
   .flavor-list-grid { grid-template-columns: 1fr; }
   .flavors-main { padding: 56px 0 64px; }
   .tab-btn { padding: 12px 16px; font-size: 0.82rem; }
+}
+
+@media (max-width: 420px) {
+  .flavor-item { gap: 14px; padding: 18px; }
+  .flavor-item-image { width: 60px; height: 60px; }
+  .flavor-item-num { display: none; }
 }
