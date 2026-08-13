@@ -169,20 +169,6 @@ export default function Home() {
                 With a proven model, brand support, and in-house manufacturing — 
                 your success is our commitment.
               </p>
-              <div className="cta-highlights">
-                <div className="cta-highlight">
-                  <strong>₹2 Lakhs</strong>
-                  <span>Royalty Fee</span>
-                </div>
-                <div className="cta-highlight">
-                  <strong>₹1 Lakh</strong>
-                  <span>Refundable Deposit</span>
-                </div>
-                <div className="cta-highlight">
-                  <strong>40%</strong>
-                  <span>Product Discount</span>
-                </div>
-              </div>
               <Link to="/franchise" className="btn-primary">
                 <span>Explore Franchise</span>
               </Link>
