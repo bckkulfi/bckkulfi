@@ -144,6 +144,7 @@
   background: var(--cream);
   border-radius: 4px;
   border-left: 3px solid transparent;
+  position: relative;
   transition: var(--transition);
   animation: fadeUp 0.4s ease both;
 }
@@ -152,6 +153,7 @@
   border-left-color: var(--maroon);
   background: var(--cream-dark);
   transform: translateX(4px);
+  z-index: 2;
 }
 
 .flavor-item-image {
@@ -167,8 +169,10 @@
 }
 
 .flavor-item:hover .flavor-item-image {
-  transform: scale(1.35);
-  box-shadow: 0 10px 24px rgba(75, 15, 15, 0.22);
+  transform: scale(2.7);
+  border-radius: 8px;
+  object-fit: contain;
+  box-shadow: 0 14px 30px rgba(75, 15, 15, 0.28);
 }
 
 .flavor-item.seasonal:hover {
