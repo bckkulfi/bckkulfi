@@ -22,18 +22,10 @@
   margin-bottom: 20px;
 }
 
-.footer-mark {
+.footer-logo-image {
   width: 44px;
   height: 44px;
-  background: var(--gold);
-  color: var(--maroon-dark);
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 0.9rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 2px;
+  object-fit: contain;
   flex-shrink: 0;
 }
 

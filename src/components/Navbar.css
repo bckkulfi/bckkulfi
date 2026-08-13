@@ -31,21 +31,11 @@
   text-decoration: none;
 }
 
-.brand-mark {
+.brand-logo {
   width: 44px;
   height: 44px;
-  background: var(--maroon);
-  color: var(--gold);
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 0.95rem;
-  letter-spacing: 0.05em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 2px;
+  object-fit: contain;
   flex-shrink: 0;
-  box-shadow: var(--shadow-sm);
 }
 
 .brand-text {
