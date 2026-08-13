@@ -17,6 +17,12 @@ const galleryItems = [
   { id: 12, title: 'Happy Customers', category: 'Events', size: 'small', bg: '#c8b890' },
 ]
 
+const galleryPhotos = [
+  'Malai_IMG_6585.jpg', 'KPPPPIMG_6611.jpg', 'Pista_IMG_6603.jpg', 'IMG_6618.jpg',
+  'Mango_IMG_6646.jpg', 'Gulab_IMG_6663.jpg', 'IMG_6632.jpg', 'Chocolate_IMG_6657.jpg',
+  'Dates__IMG_6622.jpg', 'IMG_6638.jpg', 'BC_IMG_6680.jpg', 'IMG_6677.jpg',
+]
+
 export default function Gallery() {
   return (
     <div className="gallery-page page-enter">
@@ -70,6 +76,13 @@ function GalleryCard({ item }) {
     <div className={`gallery-card size-${item.size}`} style={{ '--card-color': item.bg }}>
       <div className="gallery-card-inner">
         <div className="gallery-placeholder">
+          <img
+            className="gallery-image"
+            src={`/flavors/${encodeURIComponent(galleryPhotos[item.id - 1])}`}
+            alt={item.title}
+            loading="lazy"
+            decoding="async"
+          />
           <div className="gallery-placeholder-text">
             <span className="gallery-cat">{item.category}</span>
             <span className="gallery-title">{item.title}</span>
