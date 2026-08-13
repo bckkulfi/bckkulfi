@@ -23,8 +23,8 @@
 }
 
 .footer-logo-image {
-  width: 76px;
-  height: 76px;
+  width: 150px;
+  height: 150px;
   object-fit: contain;
   flex-shrink: 0;
 }
