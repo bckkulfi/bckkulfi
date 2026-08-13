@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="container footer-grid">
           <div className="footer-brand">
             <div className="footer-logo">
-              <img className="footer-logo-image" src="/bck-logo.png" alt="Bombay Chowpaty Kulfi" />
+              <img className="footer-logo-image" src="/bck-logo1.png" alt="Bombay Chowpaty Kulfi" />
               <div>
                 <div className="footer-name">Bombay Chowpaty Kulfi</div>
                 <div className="footer-tagline">Authentic Since 1999</div>

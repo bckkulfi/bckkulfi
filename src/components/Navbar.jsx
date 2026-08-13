@@ -30,7 +30,7 @@ export default function Navbar() {
     <header className={`navbar ${scrolled ? 'scrolled' : ''} ${open ? 'menu-open' : ''}`}>
       <div className="navbar-inner container">
         <Link to="/" className="navbar-brand" onClick={() => setOpen(false)}>
-          <img className="brand-logo" src="/bck-logo.png" alt="Bombay Chowpaty Kulfi" />
+          <img className="brand-logo" src="/bck-logo1.png" alt="Bombay Chowpaty Kulfi" />
           <div className="brand-text">
             <span className="brand-name">Bombay Chowpaty Kulfi</span>
             <span className="brand-tagline">Authentic Since 1999</span>
