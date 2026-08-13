@@ -161,6 +161,14 @@
   border-radius: 50%;
   flex-shrink: 0;
   background: var(--cream-dark);
+  position: relative;
+  z-index: 1;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.flavor-item:hover .flavor-item-image {
+  transform: scale(1.35);
+  box-shadow: 0 10px 24px rgba(75, 15, 15, 0.22);
 }
 
 .flavor-item.seasonal:hover {
