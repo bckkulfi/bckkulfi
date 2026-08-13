@@ -54,7 +54,8 @@ export default function Franchise() {
         <div className="franchise-hero-deco">BCK</div>
       </section>
 
-      {/* Investment Summary */}
+
+      {/*
       <section className="investment-section">
         <div className="container">
           <div className="investment-header">
@@ -89,8 +90,7 @@ export default function Franchise() {
             </div>
           </div>
         </div>
-      </section>
-
+      </section>*/}
       {/* Benefits */}
       <section className="benefits-section">
         <div className="container">
