@@ -8,7 +8,6 @@ const navLinks = [
   { to: '/flavors', label: 'Flavors' },
   { to: '/franchise', label: 'Franchise' },
   { to: '/gallery', label: 'Gallery' },
-  { to: '/contact', label: 'Contact' },
 ]
 
 export default function Navbar() {
