@@ -24,15 +24,26 @@ export default function Franchise() {
     name: '', email: '', phone: '', city: '', area: '', message: ''
   })
   const [submitted, setSubmitted] = useState(false)
+  const [status, setStatus] = useState('')
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value })
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    // In production: send to backend or email service
-    setSubmitted(true)
+    setStatus('Sending...')
+    try {
+      const response = await fetch('https://formspree.io/f/mvkplvow', {
+        method: 'POST',
+        headers: { Accept: 'application/json' },
+        body: new FormData(e.currentTarget),
+      })
+      if (!response.ok) throw new Error()
+      setSubmitted(true)
+    } catch {
+      setStatus('Unable to send. Please try again or email us directly.')
+    }
   }
 
   return (
@@ -175,7 +186,8 @@ export default function Franchise() {
                   </p>
                 </div>
               ) : (
-                <div className="form-fields">
+                <form className="form-fields" onSubmit={handleSubmit}>
+                  <input type="hidden" name="form_type" value="Franchise inquiry" />
                   <h3>Tell Us About Yourself</h3>
                   <div className="field-row">
                     <div className="field-group">
@@ -245,10 +257,11 @@ export default function Franchise() {
                       rows={4}
                     />
                   </div>
-                  <button className="btn-primary form-submit" onClick={handleSubmit}>
-                    <span>Submit Inquiry</span>
+                  <button className="btn-primary form-submit" type="submit" disabled={status === 'Sending...'}>
+                    <span>{status === 'Sending...' ? 'Sending...' : 'Submit Inquiry'}</span>
                   </button>
-                </div>
+                  {status && status !== 'Sending...' && <p className="form-status">{status}</p>}
+                </form>
               )}
             </div>
           </div>

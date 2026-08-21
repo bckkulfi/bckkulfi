@@ -412,6 +412,8 @@
   line-height: 1.7;
 }
 
+.form-status { color: var(--maroon); margin-top: 12px; font-size: 0.9rem; }
+
 @media (max-width: 1024px) {
   .investment-cards { grid-template-columns: repeat(2, 1fr); }
   .benefits-grid { grid-template-columns: repeat(2, 1fr); }

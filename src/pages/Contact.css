@@ -191,6 +191,8 @@
   line-height: 1.7;
 }
 
+.form-status { color: var(--maroon); margin-top: 12px; font-size: 0.9rem; }
+
 @media (max-width: 1024px) {
   .contact-grid { grid-template-columns: 1fr; }
 }
