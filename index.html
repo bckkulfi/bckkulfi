@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/bck-logo1.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      // Restore routes redirected here by public/404.html before React starts.
+      const params = new URLSearchParams(window.location.search)
+      const route = params.get('route')
+      if (route && route.startsWith('/')) {
+        window.history.replaceState(null, '', route)
+      }
+    </script>
     <meta name="description" content="Bombay Chowpaty Kulfi — Authentic Bombay street kulfi since 1999. Premium kulfi in Bangalore with franchise opportunities across India." />
     <meta name="keywords" content="kulfi, bombay kulfi, street food, Bangalore, kulfi franchise, malai kulfi, kesar kulfi" />
     <meta property="og:title" content="Bombay Chowpaty Kulfi" />
