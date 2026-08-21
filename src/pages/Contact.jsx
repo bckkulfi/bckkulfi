@@ -144,6 +144,9 @@ export default function Contact() {
                       value={form.phone}
                       onChange={handleChange}
                       placeholder="+91 XXXXX XXXXX"
+                      inputMode="numeric"
+                      pattern="[6-9][0-9]{9}"
+                      title="Enter a valid 10-digit Indian mobile number"
                     />
                   </div>
                   <div className="field-group">

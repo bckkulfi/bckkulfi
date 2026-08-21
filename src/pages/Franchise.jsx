@@ -216,14 +216,17 @@ export default function Franchise() {
                   <div className="field-row">
                     <div className="field-group">
                       <label>Phone Number *</label>
-                      <input
-                        type="tel"
-                        name="phone"
-                        value={form.phone}
-                        onChange={handleChange}
-                        placeholder="+91 XXXXX XXXXX"
-                        required
-                      />
+                    <input
+                      type="tel"
+                      name="phone"
+                      value={form.phone}
+                      onChange={handleChange}
+                      placeholder="+91 XXXXX XXXXX"
+                      inputMode="numeric"
+                      pattern="[6-9][0-9]{9}"
+                      title="Enter a valid 10-digit Indian mobile number"
+                      required
+                    />
                     </div>
                     <div className="field-group">
                       <label>Your City *</label>
